@@ -1,0 +1,2 @@
+# TheGoodwayToDevelop
+ASP.NET frustrations

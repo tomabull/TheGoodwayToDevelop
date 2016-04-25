@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team 11 // Home</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link id="default" type="text/css" href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Used for toggling stylesheets -->
+    <script>
+	function cssToggle(){
+
+		var x=document.getElementById('cssToggle');
+		if(x.checked){
+			swapSheet('css/alt.css');
+		}
+		else{
+			swapSheet('css/bootstrap.css');
+		}
+	}
+
+    </script>
+    <script>
+	function swapSheet(x){
+		document.getElementById('default').setAttribute('href', x)
+	}
+    </script>
+
+</head>
+<body style="background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/kindajean.png);">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main.php">Timetabling System:</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="main.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="~/Temp.cshtml"><span class="glyphicon glyphicon-book"></span> Temp Link</a></li>
+                    <li><a href="allocations.php"><span class="glyphicon glyphicon-saved"></span> Room Allocations</a></li>
+                    <li><a href="rooms.php"><span class="glyphicon glyphicon-blackboard"></span> Available Rooms</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-cog"></span> Settings
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="addmodule.php">Add New Module</a></li>
+                            <li><a href="editmodule.php">Edit Module Details</a></li>
+                            <li><a href="adddepartment.php">Add New Department</a></li>
+                            <li><a href="editdepartment.php">Edit Department Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="help.php"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                    <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <li><a id="google_translate_element"></a></li>
+                    <li><a><label><input type='checkbox' id='cssToggle' onchange='cssToggle();' style="width:15px;height: 15px;" /> Colour Assist</label></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- the body will be rendered here -->
+    <!-- This should give the pages a consistent layout throughout. It will be necessary to create the rest of the body stuff and link it together. I'll that to you front end devs -->
+    <br><br><br>
+    <footer class="footer">
+        <div id="wrap">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="main" class="container">
+                        <div class="row">
+                            <div class='col-md-6'>
+                                <br>
+                                <img src="http://www.lboro.ac.uk/media/wwwlboroacuk/external/content/abouttheuniversity/visual-identity/lu-logo-proposed.png" alt="logo" height="" width="">
+
+                            </div>
+
+                            <div class='col-md-6'>
+
+                                <h1>Links</h1>
+                                <a href="http://www.lboro.ac.uk/internal" target="_blank">Loughborough homepage</a>
+                                <br>
+                                <a href="http://learn.lboro.ac.uk/" target="_blank">Learn Portal</a>
+                                <br>
+                                <a href="http://maps.lboro.ac.uk/" target="_blank">Campus Map</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
